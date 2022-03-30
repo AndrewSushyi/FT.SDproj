@@ -1,0 +1,22 @@
+TC1 login user to SD
+PreCondition
+User unclogged from SD
+STR
+Go to http://service-desk.test.k8s.mc.gcf/
+Click btn Login - ER redirected to Sign in page  https://auth-test.foxtrot.ua/
+Enter Username and password in Sign in fields
+Click on btn Sign in ER redirected to http://service-desk.test.k8s.mc.gcf/dashboard
+ER:
+-opened dashboard page http://service-desk.test.k8s.mc.gcf/dashboard
+-showed user: FIO ,role, foto on page
+
+
+TC2 Opened create order page from dashboard
+STR
+Go to http://service-desk.test.k8s.mc.gcf/dashboard
+Click on menu Інфо/Створити заявку - ER opened list of cataloge services  http://service-desk.test.k8s.mc.gcf/self-diagnostic/service-catalog
+Click on one service - ER opened subservices
+Chose and clicke on one services - ER Opened create order page  http://service-desk.test.k8s.mc.gcf/orders/order?categoryId=321&categoryName=%D0%91%D1%83%D1%80%D0%B0%D0%BD&serviceId=721&serviceName=%D0%91%D1%83%D1%80%D0%B0%D0%BD
+ER:
+-shown text Створення заявки
+-FIO user in field
