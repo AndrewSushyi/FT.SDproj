@@ -4,10 +4,10 @@ LoginPage
 
 SignInPage
 private By usernameField = By.xpath("\"//input[@id='username']\"");
-    private By passwordField = By.xpath("\"//input[@id='password']\"");
-    private By signInBtn = By.xpath("//input[@id='kc-login' and @type='submit']");
-    private By errorTextUsername = By.xpath("//*[@id='input-error']");
+private By passwordField = By.xpath("\"//input[@id='password']\"");
+private By signInBtn = By.xpath("//input[@id='kc-login' and @type='submit']");
+private By errorTextUsername = By.xpath("//*[@id='input-error']");
 
  HomePage
-   private  By search = By.xpath("//input[@class='dx-texteditor-input']");
-        private By searchResaltList = By.xpath("//*[@class='dx-scrollview-content']");
+ private  By search = By.xpath("//input[@class='dx-texteditor-input']");
+ private By searchResaltList = By.xpath("//*[@class='dx-scrollview-content']");
