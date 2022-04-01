@@ -29,9 +29,9 @@ public class LoginTest {
         webDriver.findElement(By.xpath("//dx-button[@text='Login']")).click();
         //sign in page
         webDriver.findElement(By.id("username")).clear();
-        webDriver.findElement(By.id("username")).sendKeys("sushyi-a-");
+        webDriver.findElement(By.id("username")).sendKeys("");
         webDriver.findElement(By.id("password")).clear();
-        webDriver.findElement(By.id("password")).sendKeys("foxyGT33@#@#");
+        webDriver.findElement(By.id("password")).sendKeys("");
         webDriver.findElement(By.name("login")).click();
         //проверка
         Assert.assertTrue(isAvatarPresent(), "avatar is not present");
