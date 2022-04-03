@@ -14,7 +14,7 @@ public class LoginPage extends ParentPage {
 
     public void openPage() {
          try {
-             webDriver.get("http://service-desk.test.k8s.mc.gcf/");
+             webDriver.get("http://service-desk.test.k8s.mc.gcf");
          } catch (Exception e){
              Assert.fail("Can't work with browser");
          }
@@ -32,7 +32,7 @@ public class LoginPage extends ParentPage {
     public void enterPassInToInputPassWord(String password) {
         WebElement inputPass = webDriver.findElement(By.id("password"));
         inputPass.clear();
-        inputPass.sendKeys(password);;
+        inputPass.sendKeys(password);
         logger.info(password + " was inputed in to passWord");
     }
 
