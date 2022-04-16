@@ -1,16 +1,13 @@
 package pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.FindBy;
 import parentPage.ParentPage;
 
-import java.time.Duration;
-
 public class HomePage extends ParentPage {
+    @FindBy (xpath = ".//*[@class='toolbar-avatar']")
+    private WebElement avatar;
 
     public HomePage(WebDriver webDriver) {
         super(webDriver);
@@ -18,7 +15,7 @@ public class HomePage extends ParentPage {
 
     public  boolean isAvatarDisplayed(){
         try {
-            WebElement avatar = webDriver.findElement(By.xpath(".//*[@class='toolbar-avatar']"));
+//            WebElement avatar = webDriver.findElement(By.xpath(".//*[@class='toolbar-avatar']"));
             //WebElement avatar = (new WebDriverWait(webDriver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@class='toolbar-avatar']"))));
             System.out.println("avatar.isDisplayed()= " + avatar.isDisplayed());
             System.out.println("avatar.isEnabled()= " + avatar.isEnabled());

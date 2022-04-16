@@ -8,8 +8,8 @@ public class LoginWithPageObjectTest extends AbstractParentTest {
     public  void  validLogin() {
         loginPage.openPage();
         loginPage.clickOnBtnLogin();
-        loginPage.enterLoginInToInputLogin("");
-        loginPage.enterPassInToInputPassWord("");
+        loginPage.enterLoginInToInputLogin("sushyi-a");
+        loginPage.enterPassInToInputPassWord("foxyGT33@#@#");
         loginPage.clickOnBtnSignIn();
         checkExpectedResult ("Avatar is not present",
                 homePage.isAvatarDisplayed());
