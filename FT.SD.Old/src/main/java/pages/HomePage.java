@@ -14,17 +14,17 @@ public class HomePage extends ParentPage {
     }
 
     public  boolean isAvatarDisplayed(){
-        try {
-//            WebElement avatar = webDriver.findElement(By.xpath(".//*[@class='toolbar-avatar']"));
-            //WebElement avatar = (new WebDriverWait(webDriver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@class='toolbar-avatar']"))));
-            System.out.println("avatar.isDisplayed()= " + avatar.isDisplayed());
-            System.out.println("avatar.isEnabled()= " + avatar.isEnabled());
-            return avatar.isEnabled();
-        }catch (Exception e) {
-            logger.info("webelement avatar not found");
-            return false;
-        }
-
+//        try {
+////            WebElement avatar = webDriver.findElement(By.xpath(".//*[@class='toolbar-avatar']"));
+////            WebElement avatar = (new WebDriverWait(webDriver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@class='toolbar-avatar']"))));
+////            System.out.println("avatar.isDisplayed()= " + avatar.isDisplayed());
+////            System.out.println("avatar.isEnabled()= " + avatar.isEnabled());
+//            return avatar.isEnabled();
+//        }catch (Exception e) {
+//            logger.info("webelement avatar not found");
+//            return false;
+//        }
+       return actionsWithOurElements.isElementDisplayed(avatar);
     }
 
 }

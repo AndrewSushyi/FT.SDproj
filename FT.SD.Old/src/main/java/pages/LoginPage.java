@@ -34,27 +34,31 @@ public class LoginPage extends ParentPage {
 
     public void enterLoginInToInputLogin(String login) {
 //        WebElement inputLogin = webDriver.findElement(By.id("username"));
-        inputLogin.clear();
-        inputLogin.sendKeys(login);
-        logger.info(login + " was inputed in to login");
+//        inputLogin.clear();
+//        inputLogin.sendKeys(login);
+//        logger.info(login + " was inputed in to login");
+        actionsWithOurElements.enterTextInToInput(inputLogin, login);
     }
 
     public void enterPassInToInputPassWord(String password) {
 //        WebElement inputPass = webDriver.findElement(By.id("password"));
-        inputPass.clear();
-        inputPass.sendKeys(password);
-        logger.info(password + " was inputed in to passWord");
+//        inputPass.clear();
+//        inputPass.sendKeys(password);
+//        logger.info(password + " was inputed in to passWord");
+        actionsWithOurElements.enterTextInToInput(inputPass, password);
     }
 
     public void clickOnBtnLogin() {
 //        WebElement btnLogin = webDriver.findElement(By.xpath("//dx-button[@text='Login']"));
-        btnLogin.click();
-        logger.info("btn Login was clicked");
+//        btnLogin.click();
+//        logger.info("btn Login was clicked");
+        actionsWithOurElements.clickOnElement(btnLogin);
     }
 
     public void clickOnBtnSignIn() {
 //        WebElement btnSignIn = webDriver.findElement(By.id("kc-login"));
-        btnSignIn.click();
-        logger.info("btn Sign in was clicked");
+//        btnSignIn.click();
+//        logger.info("btn Sign in was clicked");
+        actionsWithOurElements.clickOnElement(btnSignIn);
     }
 }
